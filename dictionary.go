@@ -19,3 +19,31 @@ func dictionary() {
 
 	fmt.Printf("Заказ: %v, cумма: %d\n", order, total)
 }
+
+func find(arr []int, k int) [][]int {
+	pairs := make([][]int, 0)
+
+	for i := 0; i < len(arr); i++ {
+		for j := i + 1; j < len(arr); j++ {
+			if arr[i]+arr[j] == k {
+				pairs = append(pairs, []int{i, j})
+			}
+		}
+	}
+
+	return pairs
+}
+
+func removeDuplicates(input []string) []string {
+	unique := make(map[string]bool)
+	result := make([]string, 0)
+
+	for _, v := range input {
+		if !unique[v] {
+			unique[v] = true
+			result = append(result, v)
+		}
+	}
+
+	return result
+}
