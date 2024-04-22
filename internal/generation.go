@@ -1,8 +1,8 @@
-package main
+package example
 
 import "fmt"
 
-func generation() {
+func Generation() {
 	var year int
 
 	fmt.Println("Введите ваш год рождения: ")

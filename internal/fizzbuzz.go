@@ -1,8 +1,8 @@
-package main
+package example
 
 import "fmt"
 
-func fizzbuzz() {
+func FizzBuzz() {
 	for i := 1; i <= 100; i++ {
 		switch {
 		case i%3 == 0 && i%5 == 0:

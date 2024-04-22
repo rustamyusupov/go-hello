@@ -1,4 +1,4 @@
-package main
+package example
 
 import "fmt"
 
@@ -11,6 +11,6 @@ const (
 	eleven
 )
 
-func increment() {
+func Increment() {
 	fmt.Println(one, three, five, seven, nine, eleven)
 }

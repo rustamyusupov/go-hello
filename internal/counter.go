@@ -1,4 +1,4 @@
-package main
+package example
 
 import (
 	"bufio"
@@ -10,7 +10,7 @@ func f(cnt *int) {
 	*cnt++
 }
 
-func counter() {
+func Counter() {
 	// Получаем читателя пользовательского ввода
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("Interaction counter")

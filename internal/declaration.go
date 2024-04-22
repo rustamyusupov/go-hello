@@ -1,8 +1,8 @@
-package main
+package example
 
 import "fmt"
 
-func declaration() {
+func Declaration() {
 	ver := "v0.0.1"
 	id := 0
 	pi := 3.1415

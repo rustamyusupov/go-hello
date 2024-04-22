@@ -1,11 +1,11 @@
-package main
+package example
 
 import (
 	"fmt"
 	"sort"
 )
 
-func slice() {
+func Slice() {
 	var s []int
 
 	for i := 0; i <= 100; i++ {

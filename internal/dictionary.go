@@ -1,8 +1,8 @@
-package main
+package example
 
 import "fmt"
 
-func dictionary() {
+func Dictionary() {
 	groceries := map[string]int{"хлеб": 50, "молоко": 100, "масло": 200, "колбаса": 500, "соль": 20, "огурцы": 200, "сыр": 600, "ветчина": 700, "буженина": 900, "помидоры": 250, "рыба": 300, "хамон": 1500}
 	order := []string{"хлеб", "буженина", "сыр", "огурцы"}
 	total := 0
@@ -20,7 +20,7 @@ func dictionary() {
 	fmt.Printf("Заказ: %v, cумма: %d\n", order, total)
 }
 
-func find(arr []int, k int) [][]int {
+func Find(arr []int, k int) [][]int {
 	pairs := make([][]int, 0)
 
 	for i := 0; i < len(arr); i++ {
@@ -34,7 +34,7 @@ func find(arr []int, k int) [][]int {
 	return pairs
 }
 
-func removeDuplicates(input []string) []string {
+func RemoveDuplicates(input []string) []string {
 	unique := make(map[string]bool)
 	result := make([]string, 0)
 
